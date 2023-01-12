@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styl2.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Stacja Paliw
+    </title>   
+</head>
+<body>
+    <header>
+        <h1>
+            Całodobowa stacja paliw
+        </h1>
+    </header>
+    <div id="imageSection"><img src="home.png" onclick="window.open('stacja.html','_parent')"><img src="znak.png"><div id="hyper-container"><a href="kwerendy.txt" target="_blank">Pobierz dokumenty</a></div></div>
+    <section id="main">
+        <div id="formSection">
+            <h1>Orientacyjny koszt paliwa</h1>
+            <div>
+                <form>
+                    <label for="oil-type">Rodzaj paliwa (1-benzyna, 2-olej napedowy):</label>
+                    <br>
+                    <input type="number" min="1" max="2" name="oil-type" id="oil-type" style="width:150px">
+                    <br>
+                    <label for="oil-amount">Ile litrów?</label>
+                    <br>
+                    <input type="number" min="1" name="oil-amount" id="oil-amount" style="width:150px">
+                    <br>
+                    <button onclick="oblicz();return false">OBLICZ</button>
+                </form>
+                <p id="final-price"></p>
+            </div>
+        </div>
+        <div id="imageCarSection">
+            <img src="samochod.png" alt="samochód">
+        </div>
+    </section>
+    <footer>
+        <h2>Stronę opracował: 00000000000</h2>
+    </footer>
+    <script>
+        function oblicz() {
+        let kindOfOil = document.querySelector("#oil-type").value;
+        let amountOfOil = document.querySelector("#oil-amount").value;
+        let pricePerLiter;
+        let finalPriceContainer = document.querySelector("#final-price");
+        kindOfOil == 1 ?  pricePerLiter = 4 : pricePerLiter = 3.5;
+        if (kindOfOil == 2 || kindOfOil == 1) { finalPriceContainer.innerHTML = `koszt paliwa: ${pricePerLiter * amountOfOil} zł`;  
+        }
+        else {
+            finalPriceContainer.innerHTML = "koszt paliwa wynosi 0zł";
+        }
+        
+    }
+    </script>
+</body>
+</html>

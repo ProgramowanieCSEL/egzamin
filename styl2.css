@@ -1,0 +1,114 @@
+body {
+            margin:0;
+            background-color: rgb(120,0,46);
+            font-family:Cambria;
+        }
+        header {
+            height: 20vh;
+            background-color: rgb(120,0,46);
+            display:grid;
+            align-items: center;
+        }
+        header h1 {
+            text-align:center;
+            color:white;
+            padding:5px;
+            font-size:150%;
+        }
+        #main {
+            width: 100%;
+            background-color: rgb(173,20,87);
+            height: 60vh;
+            display:flex;
+            align-items: center;
+        }
+        #imageSection {
+            background-color: rgb(173,20,87);
+            height:fit-content;
+        }
+        #imageSection img {
+            width: 80px;
+            height: 80px;
+        }
+        #imageSection img:first-of-type {
+            margin-left:100px;
+        }
+        #imageSection img:last-of-type {
+            margin-left:200px;
+        }
+        #tableSection {
+            width: 60vw;
+            height: 60vh;
+            background-color: snow;
+        }
+        #tableSection h1 {
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(120,0,46);
+            display:grid;
+            align-items: center;
+            text-align:center;
+            color:white;
+            padding:5px;
+        }
+        footer p {
+            padding:5px;
+            font-size:150%;
+        }
+        #tableSection div form,#formSection h1 {
+            color:olivedrab;
+        }
+        #imageCarSection {
+            height: 322px;
+            width: 40%;
+            display:grid;
+            align-content: center;
+            justify-content: center;
+        }
+        #imageCarSection img {
+            padding:10px;
+            margin:40px;
+        }
+        #imageCarSection img:hover {
+            border:1px solid yellowgreen;
+            border-style:dotted;
+        }
+        #hyper-container {
+            width:60vw;
+            margin-left:30%;
+            background-color: rgb(173,20,87);
+        }
+        #hyper-container a {
+            margin-left:50px;
+            margin-right: 50px;
+            color:yellowgreen;
+            font-size:1.2em
+        }
+        table,table tr,table tr td {
+            border:1px solid olivedrab;
+        }
+        table tr td {
+            text-align: center;
+            width:300px;
+            height: 50px;
+            font-size:1.5em;
+            color:olivedrab;
+        }
+        #tableSection {
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #formSection div form,#formSection h1 {
+            color:olivedrab;
+        }
+        #formSection {
+            width: 60vw;
+            height: 60vh;
+            background-color: snow;
+        }
+        #formSection h1 {
+            text-align: center;
+        }
